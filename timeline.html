@@ -1,0 +1,248 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="description" content=""><meta name="keywords" content=""><title>WingsSL - Methodology</title><!-- Favicon --><link href="/images/logo-color.png" rel="shortcut icon"><!-- CSS --><link href="/assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet"><link href="/assets/plugins/glightbox/glightbox.min.css" rel="stylesheet"><link href="/assets/plugins/scrollcue/scrollcue.css" rel="stylesheet"><link href="/assets/plugins/swiper/swiper-bundle.min.css" rel="stylesheet"><link href="/css/main.min.css" rel="stylesheet"><!-- Fonts/Icons --><link href="/assets/plugins/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"><link href="/assets/plugins/fontawesome/css/all.css" rel="stylesheet"><link href="/assets/plugins/themify/themify-icons.css" rel="stylesheet"><style>.main-timeline {
+            position: relative
+        }
+
+        .main-timeline:before {
+            content: "";
+            display: block;
+            width: 2px;
+            height: 100%;
+            background: #c6c6c6;
+            margin: 0 auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0
+        }
+
+        .main-timeline .timeline {
+            margin-bottom: 40px;
+            position: relative
+        }
+
+        .main-timeline .timeline:after {
+            content: "";
+            display: block;
+            clear: both
+        }
+
+        .main-timeline .icon {
+            width: 18px;
+            height: 18px;
+            line-height: 18px;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0
+        }
+
+        .main-timeline .icon:before,
+        .main-timeline .icon:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.33s ease-out 0s
+        }
+
+        .main-timeline .icon:before {
+            background: #fff;
+            border: 2px solid #232323;
+            left: -3px
+        }
+
+        .main-timeline .icon:after {
+            border: 2px solid #c6c6c6;
+            left: 3px
+        }
+
+        .main-timeline .timeline:hover .icon:before {
+            left: 3px
+        }
+
+        .main-timeline .timeline:hover .icon:after {
+            left: -3px
+        }
+
+        .main-timeline .date-content {
+            width: 50%;
+            float: left;
+            margin-top: 22px;
+            position: relative
+        }
+
+        .main-timeline .date-content:before {
+            content: "";
+            width: 36.5%;
+            height: 2px;
+            background: #c6c6c6;
+            margin: auto 0;
+            position: absolute;
+            top: 0;
+            right: 10px;
+            bottom: 0
+        }
+
+        .main-timeline .date-outer {
+            width: 125px;
+            height: 125px;
+            font-size: 16px;
+            text-align: center;
+            margin: auto;
+            z-index: 1
+        }
+
+        .main-timeline .date-outer:before,
+        .main-timeline .date-outer:after {
+            content: "";
+            width: 125px;
+            height: 125px;
+            margin: 0 auto;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            transition: all 0.33s ease-out 0s
+        }
+
+        .main-timeline .date-outer:before {
+            background: #fff;
+            border: 2px solid #232323;
+            left: -6px
+        }
+
+        .main-timeline .date-outer:after {
+            border: 2px solid #c6c6c6;
+            left: 6px
+        }
+
+        .main-timeline .timeline:hover .date-outer:before {
+            left: 6px
+        }
+
+        .main-timeline .timeline:hover .date-outer:after {
+            left: -6px
+        }
+
+        .main-timeline .date {
+            width: 100%;
+            margin: auto;
+            position: absolute;
+            top: 27%;
+            left: 0
+        }
+
+        .main-timeline .month {
+            font-size: 18px;
+            font-weight: 700
+        }
+
+        .main-timeline .year {
+            display: block;
+            font-size: 30px;
+            font-weight: 700;
+            color: #232323;
+            line-height: 36px
+        }
+
+        .main-timeline .timeline-content {
+            width: 50%;
+            padding: 20px 0 20px 50px;
+            float: right
+        }
+
+        .main-timeline .title {
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 24px;
+            margin: 0 0 15px 0
+        }
+
+        .main-timeline .description {
+            margin-bottom: 0
+        }
+
+        .main-timeline .timeline:nth-child(2n) .date-content {
+            float: right
+        }
+
+        .main-timeline .timeline:nth-child(2n) .date-content:before {
+            left: 10px
+        }
+
+        .main-timeline .timeline:nth-child(2n) .timeline-content {
+            padding: 20px 50px 20px 0;
+            text-align: right
+        }
+
+        @media only screen and (max-width: 991px) {
+            .main-timeline .date-content {
+                margin-top: 35px
+            }
+            .main-timeline .date-content:before {
+                width: 22.5%
+            }
+            .main-timeline .timeline-content {
+                padding: 10px 0 10px 30px
+            }
+            .main-timeline .title {
+                font-size: 17px
+            }
+            .main-timeline .timeline:nth-child(2n) .timeline-content {
+                padding: 10px 30px 10px 0
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            .main-timeline:before {
+                margin: 0;
+                left: 7px
+            }
+            .main-timeline .timeline {
+                margin-bottom: 20px
+            }
+            .main-timeline .timeline:last-child {
+                margin-bottom: 0
+            }
+            .main-timeline .icon {
+                margin: auto 0
+            }
+            .main-timeline .date-content {
+                width: 95%;
+                float: right;
+                margin-top: 0
+            }
+            .main-timeline .date-content:before {
+                display: none
+            }
+            .main-timeline .date-outer {
+                width: 110px;
+                height: 110px
+            }
+            .main-timeline .date-outer:before,
+            .main-timeline .date-outer:after {
+                width: 110px;
+                height: 110px
+            }
+            .main-timeline .date {
+                top: 30%
+            }
+            .main-timeline .year {
+                font-size: 24px
+            }
+            .main-timeline .timeline-content,
+            .main-timeline .timeline:nth-child(2n) .timeline-content {
+                width: 95%;
+                text-align: center;
+                padding: 10px 0
+            }
+            .main-timeline .title {
+                margin-bottom: 10px
+            }
+        }</style></head><body class="bg-gray" data-preloader="light"><div class="header nav-left"><div class="container-fluid px-xxl-5"><!-- Logo --><div class="header-logo"><img src="/images/logo.png" alt="WINGS SL"></div><!-- Menu --><div class="header-menu nav-link-hover-line"><ul class="nav"><li class="nav-item"><a class="nav-link" href="/">Home</a></li><li class="nav-item"><a class="nav-link" href="/about-us.html">About Us</a></li><li class="nav-item"><a class="nav-link" href="/#research-process">Research</a></li><li class="nav-item"><a class="nav-link" href="/timeline.html">Timeline</a></li><li class="nav-item"><a class="nav-link" href="/technologies.html">Technologies</a></li></ul></div><!-- Extras --><div class="header-extra ms-4"><div class="d-flex align-items-center"><a class="button button-sm button-dark button-rounded button-hover-slide ms-3 ms-lg-4" href="/downloads.html"><span data-text="Downloads">Downloads</span></a></div></div><!-- Mobile Menu Toggle --> <button class="mobile-menu-toggle"><span></span></button></div><!-- end container-fluid --></div><!-- end Header --><main><!-- Title --><div class="px-3 px-md-4 px-xxl-5"><div class="bg-image parallax border-radius-2" data-bg-src="https://images.pexels.com/photos/787067/pexels-photo-787067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"><div class="section-spacing-xl bg-black-40"><div class="container text-center"><div class="row g-4"><div class="col-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2"><h1 class="display-3 fw-medium text-center mb-0">Timeline</h1></div></div><!-- end row --></div><!-- end container --></div></div></div><!-- end Title --><div class="container"><div class="main-timeline"><!-- start experience section--><div class="timeline"><div class="icon"></div><div class="date-content"><div class="date-outer"><span class="date"><span class="month">October</span> <span class="year">2024</span></span></div></div><div class="timeline-content"><h5 class="title">Final Presentation & Viva – 20%</h5><p class="description">The viva is conducted individually to evaluate each member's contribution to the project.</p></div></div><!-- end experience section--><!-- start experience section--><div class="timeline"><div class="icon"></div><div class="date-content"><div class="date-outer"><span class="date"><span class="month">October</span> <span class="year">2024</span></span></div></div><div class="timeline-content"><h5 class="title">Website Assessment – 2%</h5><p class="description">The website facilitates the promotion of our research project and provides comprehensive details about it.</p></div></div><!-- end experience section--><!-- start experience section--><div class="timeline"><div class="icon"></div><div class="date-content"><div class="date-outer"><span class="date"><span class="month">September</span> <span class="year">2024</span></span></div></div><div class="timeline-content"><h5 class="title">Progress Presentation 2 – 18%</h5><p class="description">Progress Presentation II assesses the project's status at 90% completion, accompanied by a poster presentation that provides an overview of the entire project.</p></div></div><!-- end experience section--><!-- start experience section--><div class="timeline"><div class="icon"></div><div class="date-content"><div class="date-outer"><span class="date"><span class="month">August</span> <span class="year">2024</span></span></div></div><div class="timeline-content"><h5 class="title">Final Report – 19%</h5><p class="description">The Final Report assesses the project completed over the year. The marks listed below include those for individual and group reports, as well as the Final Report.</p></div></div><!-- end experience section--><!-- start experience section--><div class="timeline"><div class="icon"></div><div class="date-content"><div class="date-outer"><span class="date"><span class="month">August</span> <span class="year">2024</span></span></div></div><div class="timeline-content"><h5 class="title">Research Paper – 10%</h5><p class="description">Explain how you contribute to the existing body of knowledge, while appropriately acknowledging all the sources you consulted to create new insights.</p></div></div><!-- end experience section--><!-- start experience section--><div class="timeline"><div class="icon"></div><div class="date-content"><div class="date-outer"><span class="date"><span class="month">May</span> <span class="year">2024</span></span></div></div><div class="timeline-content"><h5 class="title">Progress Presentation 1 – 15%</h5><p class="description">Progress Presentation I evaluates the project's status at 50% completion, highlighting any gaps or inconsistencies in the design or requirements.</p></div></div><!-- end experience section--><!-- start experience section--><div class="timeline"><div class="icon"></div><div class="date-content"><div class="date-outer"><span class="date"><span class="month">May</span> <span class="year">2024</span></span></div></div><div class="timeline-content"><h5 class="title">Status Document 1 – 4%</h5><p class="description">Status Document 1 submission, which evaluates the project's progress and any potential issues or roadblocks.</p></div></div><!-- end experience section--><!-- start experience section--><div class="timeline"><div class="icon"></div><div class="date-content"><div class="date-outer"><span class="date"><span class="month">February</span> <span class="year">2024</span></span></div></div><div class="timeline-content"><h5 class="title">Project Proposal Presentation & Report – 12%</h5><p class="description">A project proposal is submitted and presented to potential sponsors or clients to obtain funding or project approval.</p></div></div><!-- end experience section--></div></div><div class="section-spacing pt-0 px-3 px-md-4 px-xxl-5"><div class="bg-image parallax border-radius-2" data-bg-src="https://images.pexels.com/photos/54462/gulls-bird-fly-coast-54462.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"><div class="bg-gradient-2 bg-opacity-20"><div class="section-spacing-lg bg-black-60 px-4 px-md-5 text-center"><div class="container"><div class="row"><div class="col-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2"><div class="h1 display-4 text-white">Downloads</div><p class="fs-5">Explore our research materials and applications</p><ul class="list-inline-2xl mt-4" data-cues="slideInUp"><li><a class="button button-rounded button-lg button-gradient-2" href="/downloads.html">Visit Downloads</a></li></ul></div></div><!-- end row --></div><!-- end container --></div></div></div></div><!-- Footer --><div class="bg-dark"><div class="section-spacing-xs"><div class="container"><div class="row g-4 g-lg-5 d-flex mx-auto justify-content-center"><div class="col-12 col-lg-3"><h2 class="uppercase letter-spacing-1 d-flex mx-auto justify-content-center"><img src="/images/logo-color.png"></h2><p class="text-center">Cutting-Edge AI for Bird Identification and Song Recognition</p><ul class="list-inline-lg mt-2 mt-lg-3"></ul></div><div class="col-6 col-lg-2 offset-lg-1"><h6 class="sm-heading">Explore</h6><ul class="list-unstyled mt-3"><li><a class="link-hover-line" href="/downloads.html">Downloads</a></li><li><a class="link-hover-line" href="/about-us.html">About Us</a></li><li><a class="link-hover-line" href="/timeline.html">Timeline</a></li><li><a class="link-hover-line" href="/#research-process">Research</a></li></ul></div><div class="col-6 col-lg-2"><h6 class="sm-heading">Useful</h6><ul class="list-unstyled mt-3"><li><a class="link-hover-line" href="/research-gap.html">Research Gap</a></li><li><a class="link-hover-line" href="/research-problem-solution.html">Research Problem & Solution</a></li><li><a class="link-hover-line" href="/research-objectives.html">Research Objectives</a></li><li><a class="link-hover-line" href="/methodology.html">Methodology</a></li></ul></div></div><!-- end row --></div><!-- end container --></div><div class="container"><hr class="hr-diagonal"><div class="py-4"><div class="row text-center justify-content-center d-flex mx-auto"><div class="col-12 col-md-12 text-center text-md-start"><p>&copy; 2024 WingsSL, All Rights Reserved.</p></div></div><!-- end row --></div></div><!-- end container --></div><!-- end Footer --></main><!-- Cursors --><div class="cursors"><div class="cursor-inner"></div></div><!-- end Cursors --><!-- Scroll to Top --><div class="scrolltotop icon-lg"><i class="bi bi-arrow-up-short"></i></div><!-- end Scroll to Top --><!-- JavaScripts --><script src="/assets/plugins/jquery.min.js"></script><script src="/assets/plugins/plugins.js"></script><script src="/js/main.min.js"></script></body></html>
